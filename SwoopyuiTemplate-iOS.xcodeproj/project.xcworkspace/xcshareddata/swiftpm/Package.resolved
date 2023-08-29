@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "python-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kewlbear/Python-iOS.git",
+      "state" : {
+        "revision" : "ace19caa26a9fc7a1a666757852fd4f8050ac4df",
+        "version" : "0.0.20211030092316"
+      }
+    },
+    {
+      "identity" : "swoopyuicore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SKbarbon/SwoopyuiCore.git",
+      "state" : {
+        "revision" : "c9a889834506803ba294fad4205f23f97c98f2ae",
+        "version" : "0.2.41"
+      }
+    }
+  ],
+  "version" : 2
+}

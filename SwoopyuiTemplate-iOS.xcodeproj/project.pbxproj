@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		AA5ADE302A9E142F00D76258 /* SwoopyuiTemplate_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5ADE2F2A9E142F00D76258 /* SwoopyuiTemplate_iOSApp.swift */; };
-		AA5ADE322A9E142F00D76258 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5ADE312A9E142F00D76258 /* ContentView.swift */; };
 		AA5ADE342A9E143200D76258 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5ADE332A9E143200D76258 /* Assets.xcassets */; };
 		AA5ADE372A9E143200D76258 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5ADE362A9E143200D76258 /* Preview Assets.xcassets */; };
+		AA5ADE3F2A9E14FE00D76258 /* Python-iOS in Frameworks */ = {isa = PBXBuildFile; productRef = AA5ADE3E2A9E14FE00D76258 /* Python-iOS */; };
+		AA5ADE422A9E15B400D76258 /* SwoopyuiCore in Frameworks */ = {isa = PBXBuildFile; productRef = AA5ADE412A9E15B400D76258 /* SwoopyuiCore */; };
+		AA5ADE452A9E177C00D76258 /* PythonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5ADE442A9E177C00D76258 /* PythonApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AA5ADE2C2A9E142F00D76258 /* SwoopyuiTemplate-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwoopyuiTemplate-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5ADE2F2A9E142F00D76258 /* SwoopyuiTemplate_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwoopyuiTemplate_iOSApp.swift; sourceTree = "<group>"; };
-		AA5ADE312A9E142F00D76258 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AA5ADE332A9E143200D76258 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA5ADE362A9E143200D76258 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA5ADE442A9E177C00D76258 /* PythonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA5ADE422A9E15B400D76258 /* SwoopyuiCore in Frameworks */,
+				AA5ADE3F2A9E14FE00D76258 /* Python-iOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,9 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				AA5ADE2F2A9E142F00D76258 /* SwoopyuiTemplate_iOSApp.swift */,
-				AA5ADE312A9E142F00D76258 /* ContentView.swift */,
 				AA5ADE332A9E143200D76258 /* Assets.xcassets */,
 				AA5ADE352A9E143200D76258 /* Preview Content */,
+				AA5ADE442A9E177C00D76258 /* PythonApp.swift */,
 			);
 			path = "SwoopyuiTemplate-iOS";
 			sourceTree = "<group>";
@@ -83,6 +87,10 @@
 			dependencies = (
 			);
 			name = "SwoopyuiTemplate-iOS";
+			packageProductDependencies = (
+				AA5ADE3E2A9E14FE00D76258 /* Python-iOS */,
+				AA5ADE412A9E15B400D76258 /* SwoopyuiCore */,
+			);
 			productName = "SwoopyuiTemplate-iOS";
 			productReference = AA5ADE2C2A9E142F00D76258 /* SwoopyuiTemplate-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,10 @@
 				Base,
 			);
 			mainGroup = AA5ADE232A9E142F00D76258;
+			packageReferences = (
+				AA5ADE3D2A9E14FE00D76258 /* XCRemoteSwiftPackageReference "Python-iOS" */,
+				AA5ADE402A9E15B400D76258 /* XCRemoteSwiftPackageReference "SwoopyuiCore" */,
+			);
 			productRefGroup = AA5ADE2D2A9E142F00D76258 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA5ADE322A9E142F00D76258 /* ContentView.swift in Sources */,
 				AA5ADE302A9E142F00D76258 /* SwoopyuiTemplate_iOSApp.swift in Sources */,
+				AA5ADE452A9E177C00D76258 /* PythonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +354,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA5ADE3D2A9E14FE00D76258 /* XCRemoteSwiftPackageReference "Python-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kewlbear/Python-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.20211030092316;
+			};
+		};
+		AA5ADE402A9E15B400D76258 /* XCRemoteSwiftPackageReference "SwoopyuiCore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SKbarbon/SwoopyuiCore.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.41;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA5ADE3E2A9E14FE00D76258 /* Python-iOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA5ADE3D2A9E14FE00D76258 /* XCRemoteSwiftPackageReference "Python-iOS" */;
+			productName = "Python-iOS";
+		};
+		AA5ADE412A9E15B400D76258 /* SwoopyuiCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA5ADE402A9E15B400D76258 /* XCRemoteSwiftPackageReference "SwoopyuiCore" */;
+			productName = SwoopyuiCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AA5ADE242A9E142F00D76258 /* Project object */;
 }
