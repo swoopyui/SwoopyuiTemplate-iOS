@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SKbarbon/SwoopyuiCore.git",
       "state" : {
-        "revision" : "c9a889834506803ba294fad4205f23f97c98f2ae",
-        "version" : "0.2.41"
+        "revision" : "d5483ddaacc53518c2573aafe29bde037d52a31b",
+        "version" : "0.2.62"
       }
     }
   ],
